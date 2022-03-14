@@ -39,7 +39,7 @@ const Modal = ({ closeModal, userInfo }: Props) => {
       </div>
 
     </div>
-  )
-}
+  );
+};
 
 export default Modal;

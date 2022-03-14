@@ -34,7 +34,7 @@ const Form = ({ service, appointments, handleUpdateAppointments }: Props) => {
       ...prevState,
       [name]: value
     }));
-  }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ const Form = ({ service, appointments, handleUpdateAppointments }: Props) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(userInfo)
-    }
+    };
 
     fetch(`/appointments/${checkedId}`, requestOptions)
       .then(res => res.json())
@@ -57,7 +57,7 @@ const Form = ({ service, appointments, handleUpdateAppointments }: Props) => {
 
   const closeModal = () => {
     setDisplayModal(false);
-  }
+  };
 
   const nestedForm = (
     <div className="nested-form">
@@ -116,7 +116,7 @@ const Form = ({ service, appointments, handleUpdateAppointments }: Props) => {
         displayModal && <Modal closeModal={closeModal} userInfo={apptDetails} />
       }
     </div>
-  )
-}
+  );
+};
 
 export default Form;

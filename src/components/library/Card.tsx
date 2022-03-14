@@ -26,7 +26,7 @@ const Card = ({ service, appointments, handleUpdateAppointments }: Props) => {
       default:
         return DetailIcon;
     }
-  }
+  };
   return (
     <div className='service-card' key={service.id}>
       <span className="service-card__header">
@@ -42,7 +42,7 @@ const Card = ({ service, appointments, handleUpdateAppointments }: Props) => {
         handleUpdateAppointments={handleUpdateAppointments}
       />
     </div>
-  )
-}
+  );
+};
 
 export default Card;
