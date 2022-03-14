@@ -108,7 +108,7 @@ const Form = ({ service, appointments, handleUpdateAppointments }: Props) => {
           }
           { isChecked && nestedForm }
         </fieldset>
-        <Button>
+        <Button disabled={!isChecked}>
           Book Now
         </Button>
       </form>

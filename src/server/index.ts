@@ -28,7 +28,7 @@ type UserAppointment = {
   customerName: string,
   make: string,
   model: string,
-  year: string,
+  modelYear: string,
 }
 
 const services: Service[] = [

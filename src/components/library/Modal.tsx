@@ -29,7 +29,9 @@ const Modal = ({ closeModal, userInfo }: Props) => {
           <p><span>Start:</span> {details.start ? dateSanitizer(details.start) : ''}</p>
           <p><span>Duration:</span> {Math.ceil(Number(details.duration) / 60)} Minutes</p>
           <p><span>Name:</span> {details.customerName}</p>
-          <p><span>Your Vehicle:</span> {details.make} | {details.model} | {details.year}</p>
+          <p><span>Vehicle Make:</span> {details.make}</p>
+          <p><span>Vehicle Model:</span> {details.model}</p>
+          <p><span>Vehicle Year:</span> {details.modelYear}</p>
         </div>
         <Button onClick={() => closeModal()}>
           Close
