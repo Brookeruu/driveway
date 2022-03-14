@@ -1,0 +1,21 @@
+.service-card {
+  padding: 20px 40px;
+  box-shadow: 1px 5px 5px 1px lightgray;
+  margin-top: 40px;
+}
+
+.service-card__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image--icon {
+  margin-right: 30px;
+  opacity: .5;
+}
+
+h2.heading {
+  color: #5e5d5b;
+}

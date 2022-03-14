@@ -12,7 +12,7 @@ const Button = ({ onClick, href, children, ...props }: Props) => {
   return (
     <>
       {href ? (
-        <Link to={href}>{children}</Link>
+        <Link to={href} className={props.className}>{children}</Link>
       ) : (
         <button
           onClick={onClick}

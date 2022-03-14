@@ -1,0 +1,53 @@
+form {
+  border-top: 2px solid #5e5d5b;
+  padding: 10px;
+  z-index: 1;
+}
+
+form > * {
+  margin-top: 16px;
+}
+
+.fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-align: left;
+}
+
+.legend {
+  color: #5e5d5b;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 6px 12px;
+}
+
+input {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.nested-form.hidden {
+  display: none;
+}
+
+.nested-form > div {
+  flex-direction: column;
+}
+
+p {
+  color: #5e5d5b;
+}

@@ -1,16 +1,21 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { useEffect } from 'react';
 import LandingPage from "./components/Landing";
+import ServicePage from "./components/Services";
 
 const App = () => {
   return (
     <main>
-      <BrowserRouter>
+      <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <LandingPage />
           </Route>
+          <Route path="/scheduler">
+            <ServicePage />
+          </Route>
         </Switch>
-      </BrowserRouter>
+      </Router>
     </main>
   );
 };

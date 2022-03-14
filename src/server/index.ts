@@ -20,6 +20,17 @@ type Appointment = {
   duration: number;
 };
 
+type UserAppointment = {
+  id: string,
+  serviceName: string,
+  start: string,
+  duration: string,
+  customerName: string,
+  make: string,
+  model: string,
+  year: string,
+}
+
 const services: Service[] = [
   {
     id: 1,
@@ -131,3 +142,5 @@ app.listen(process.env.SERVERPORT || 2000, () => {
     `Scheduling server listening on port ${process.env.SERVERPORT || 2000}...`
   );
 });
+
+export type { Service, Appointment, UserAppointment };
